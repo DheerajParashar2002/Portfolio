@@ -1,0 +1,240 @@
+ /* For styling */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 82px;
+    background-color: #FEE715;
+    color: black    ;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 4px 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #101820;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.01rem;
+}
+
+div.left {
+    font-size: 1.6rem;
+}
+
+body {
+    background-color: #101820;
+    color: white;
+}
+
+.FirstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    align-items: center;
+}
+
+.FirstSection>div {
+    width: 35%;
+}
+
+.LeftSection {
+    font-size: 2.9rem;
+}
+
+.RightSection {
+    width: 50%;
+}
+
+.LeftSection a .btn{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #FEE715;
+    color: black;
+    border: 4px solid black;
+    border-radius: 8px;
+    margin: 30px 0px;
+}
+
+.RightSection img {
+    width: 119%;
+    margin: 5px;
+}
+
+.purple {
+    color: #FEE715;
+}
+
+#element {
+    color: #FEE715;
+}
+
+main hr {
+    height: 2px;
+    border: 0;
+    margin: 50px 90px;
+    background-color: #FEE715;
+}
+
+.SecondSection {
+    margin: auto;
+    max-width: 80vw;
+}
+
+.SecondSection h1 {
+    font-size: 2rem;
+    margin: 30px;
+}
+
+.SecondSection .box {
+    display: flex;
+    background-color: #FEE715;
+    height: 3px;
+    margin: 60px 0px;
+}
+
+.SecondSection .vertical {
+    height: 100px;
+    width: 2px;
+    background-color: #FEE715;
+    margin: 3px 8vw;
+    
+}
+
+.Image-Top {
+    position: relative;
+    margin-left: -17px;
+    width: 36px;
+    background-color: #101820;
+}
+
+.vertical_title {
+    position: relative;
+    margin-top: 70px;
+    margin-left: -25px;
+    color: #FEE715;
+}
+
+.vertical_desc {
+    position: relative;
+    margin-top: 15px;
+    margin-left: -60px;
+    width: 150px;
+    font-size: 12px;
+    
+}
+
+footer{
+    background-color: #FEE715;
+    height: 200px;
+    margin-top: 390px;
+    color: #101820;
+    font-weight: bold;
+}
+
+.Footer {
+    display: flex;
+    padding: 40px;
+   justify-content: space-evenly;
+   font-size: larger;
+}
+ 
+.Footer ul li{
+    list-style: none;
+}
+.Footer ul a{
+    /* list-style: none; */
+    /* text-decoration: none; */
+    color: rgb(0 , 0 , 0);
+}
+
+.rights{
+    text-align: center;
+   
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1211px){
+    body{
+        background-color: rgb(37, 2, 2);
+    }
+    .FirstSection{
+        flex-direction: column-reverse;
+    }
+
+    .LeftSection{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .RightSection{
+        width: 400 px !important;
+        margin-bottom: 70px;
+    }
+
+    .SecondSection{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* height: 249vh; */
+    }
+    .box{
+        flex-direction: column;
+    }
+    .SecondSection .vertical{
+        height: unset;
+    }
+    .vertical_title , .vertical_desc{
+        left: 90px;
+        /* text-align: center; */
+    }
+
+    .SecondSection .box{
+        width: 60vw;
+    }
+
+    .Image-Top {
+        top: 120px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    Footer{
+        /* display: none; */
+        position: relative;
+        top: 1300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    body{
+        min-width: fit-content;
+    }
+}
